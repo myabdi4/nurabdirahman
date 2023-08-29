@@ -8,14 +8,14 @@ const Main = () => {
               LATEST PROJECTS
             </h1>
             <div className="flex sm:flex-col pt-5 gap-2 ">
-              <div className="sm:flex gap-4 sm:p-2 items-center ">
+              <div className="sm:flex gap-4 sm:p-2 items-center">
                 <img
-                  className="sm:w-64 w-max pb-5 rounded hover:cursor-pointer hover:shadow-lg object-cover"
+                  className="sm:w-64 hover:cursor-pointer hover:shadow-lg object-cover rounded"
                   src="/chicken.jpg"
                   alt=""
                 />
                 <div className="flex flex-col gap-5 ">
-                  <h2 className="text-xl uppercase sm:text-start text-center">
+                  <h2 className="text-2xl pt-4 uppercase sm:text-start text-center">
                     ARAMO FOODS
                   </h2>
                   <div className="text-lg sm:w-4/5 ">
