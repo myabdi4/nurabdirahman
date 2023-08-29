@@ -10,7 +10,7 @@ const Section = () => {
             web experiences that blend design and technology seamlessly
           </p>
           <img
-            className="sm:rounded-lg sm:w-64 justify-center"
+            className="rounded-full ring-2 ring-white w-64 justify-center"
             src="/profile.jpg"
             alt="logo"
           />
@@ -41,8 +41,9 @@ const Section = () => {
 
             <li>
               {" "}
-              <a href="/">
-                <svg className="w-8 bg-white rounded"
+              <a href="https://github.com/myabdi4">
+                <svg
+                  className="w-8 bg-white rounded"
                   xmlns="http://www.w3.org/2000/svg"
                   data-name="Layer 1"
                   viewBox="0 0 24 24"

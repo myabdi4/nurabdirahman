@@ -8,9 +8,9 @@ const Main = () => {
               LATEST PROJECTS
             </h1>
             <div className="flex sm:flex-col pt-5 gap-2 ">
-              <div className="sm:flex gap-4 sm:p-2 items-center">
+              <div className="sm:flex gap-4 sm:p-2 items-center ">
                 <img
-                  className="sm:w-64 pb-5 rounded-lg"
+                  className="sm:w-64 w-max pb-5 rounded hover:cursor-pointer hover:shadow-lg object-cover"
                   src="/chicken.jpg"
                   alt=""
                 />
