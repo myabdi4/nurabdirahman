@@ -10,7 +10,7 @@ const Section = () => {
             web experiences that blend design and technology seamlessly
           </p>
           <img
-            className="rounded-lg sm:w-64 justify-center"
+            className="sm:rounded-lg sm:w-64 justify-center"
             src="profile.jpg"
             alt="logo"
           />
