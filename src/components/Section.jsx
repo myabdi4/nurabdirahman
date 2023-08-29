@@ -18,7 +18,7 @@ const Section = () => {
           {/* SOCIAL MEDIA */}
           <ul className="flex space-x-4 pt-3">
             <li>
-              <a href="/">
+              <a href="https://twitter.com/mynurabdirahman">
                 <svg
                   className="w-8 bg-white"
                   xmlns="http://www.w3.org/2000/svg"
