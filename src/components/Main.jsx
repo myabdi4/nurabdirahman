@@ -25,10 +25,18 @@ const Main = () => {
                     satisfaction. BiteBliss: Taste, Speed, Bliss!
                   </div>
                   <div className="flex gap-2">
-                    <a href="/" className=" p-2 rounded bg-green-800 w-max">
+                    <a
+                      href="https://github.com/myabdi4/myabdifoods"
+                      target="_blink"
+                      className=" p-2 rounded bg-green-800 w-max"
+                    >
                       SOURCE CODE
                     </a>
-                    <a href="/" className=" flex gap-2 text-center p-2 rounded bg-green-800 w-max">
+                    <a
+                      href="https://myabdifoods.netlify.app"
+                      target="_blank"
+                      className=" flex gap-2 text-center p-2 rounded bg-green-800 w-max"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"

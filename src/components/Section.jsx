@@ -11,7 +11,7 @@ const Section = () => {
           </p>
           <img
             className="sm:rounded-lg sm:w-64 justify-center"
-            src="profile.jpg"
+            src="/profile.jpg"
             alt="logo"
           />
 
