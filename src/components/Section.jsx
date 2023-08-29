@@ -6,8 +6,8 @@ const Section = () => {
           <h2 className="font-bold">HI, I AM ABDIRAHMAN NUR</h2>
           <p className="pb-5">
             A skilled front-end developer passionate about crafting captivating
-            <span className="hidden sm:block sm:text-center"></span>
-            web experiences that blend design and technology seamlessly
+            <span className="hidden sm:block sm:text-center"></span> 
+             -web experiences that blend design and technology seamlessly
           </p>
           <img
             className="rounded-full ring-2 ring-white w-64 justify-center"
