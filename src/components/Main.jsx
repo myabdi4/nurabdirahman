@@ -1,4 +1,25 @@
+import { useEffect, useState } from "react";
+import { createClient } from "@supabase/supabase-js";
+
+// ENVIRONEMTAL VARIABLES
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseToken = import.meta.env.VITE_SUPABASE_TOKEN;
+
+// DATABASE CONNECTION
+const supabase = createClient(supabaseUrl, supabaseToken);
+
 const Main = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    getProjects();
+  }, []);
+
+  async function getProjects() {
+    const { data } = await supabase.from("projects").select();
+    setProjects(data);
+  }
+
   return (
     <>
       <div className="mainContent">
@@ -16,13 +37,19 @@ const Main = () => {
                 />
                 <div className="flex flex-col gap-5 ">
                   <h2 className="text-2xl pt-4 uppercase sm:text-start text-center">
-                    ARAMO FOODS
+                    {/* ENTER HERE */}
+                    <ul>
+                      {projects.map((project) => (
+                        <li key={project.title}>{project.title}</li>
+                      ))}
+                    </ul>
                   </h2>
                   <div className="text-lg sm:w-4/5 ">
-                    Savor the moment at Aramo Foods, where taste and speed
-                    unite! Our crave-worthy menu delivers flavor-packed burgers,
-                    crispy fries, and more – all served up swiftly for your
-                    satisfaction. BiteBliss: Taste, Speed, Bliss!
+                    <ul>
+                      {projects.map((project) => (
+                        <li key={project.description}>{project.description}</li>
+                      ))}
+                    </ul>
                   </div>
                   <div>
                     <div className="flex gap-5">
