@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 
 // ENVIRONEMTAL VARIABLES
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseToken = import.meta.env.VITE_SUPABASE_TOKEN;
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 
 // DATABASE CONNECTION
 const supabase = createClient(supabaseUrl, supabaseToken);
@@ -36,7 +36,7 @@ const Main = () => {
                   alt=""
                 />
                 <div className="flex flex-col gap-5 ">
-                  <h2 className="text-2xl pt-4 uppercase sm:text-start text-center">
+                  <h2 className="text-2xl font-bold pt-4 uppercase sm:text-start text-center">
                     {/* ENTER HERE */}
                     <ul>
                       {projects.map((project) => (
