@@ -2,21 +2,22 @@ const Header = () => {
   return (
     <>
       <nav className="navbar-background">
-        <div className="navbar-container border-b border-gray-700 ">
+        <div className="navbar-container border-b border-gray-700">
           <div className="container p-6 mx-auto text-white">
             <div className="sm:grid sm:grid-cols-3 grid grid-cols-2 sm:justify-center sm:space-x-4 text-lg">
-              <p className="">ABDIRAHMAN NUR</p>
+              <p className="hover:text-green-400 hover:cursor-pointer">
+                <a href="/">ABDIRAHMAN NUR</a>
+              </p>
               <ul className="url-links ">
-                <li>
+                <li className="hover:text-green-400 ">
                   <a href="/">PROJECTS</a>
                 </li>
-                <li>
+                <li className="hover:text-green-400">
                   <a href="/">BLOG</a>
                 </li>
-                <li>
+                <li className="hover:text-green-400">
                   <a href="/">ABOUT</a>
                 </li>
-                
               </ul>
               <p className="sm:hidden flex justify-end">
                 <svg
