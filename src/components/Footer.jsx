@@ -8,17 +8,17 @@ const Footer = () => {
               <ul className="flex justify-center space-x-4">
                 <li className="bg-gray-300  p-1 w-10 hover:bg-green-300">
                   <a href="/">
-                    <img src="public/github.png" alt="" />
-                  </a>
-                </li>
-                <li className="bg-gray-300 p-1 w-10 hover:bg-green-300">
-                  <a href="public/twitter.png">
-                    <img src="public/linkedin.png" alt="" />
+                    <img src="github.png" alt="" />
                   </a>
                 </li>
                 <li className="bg-gray-300 p-1 w-10 hover:bg-green-300">
                   <a href="/">
-                    <img src="public/twitter.png" alt="" />
+                    <img src="linkedin.png" alt="" />
+                  </a>
+                </li>
+                <li className="bg-gray-300 p-1 w-10 hover:bg-green-300">
+                  <a href="/">
+                    <img src="twitter.png" alt="" />
                   </a>
                 </li>
               </ul>
