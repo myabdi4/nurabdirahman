@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .page {
-  @apply tracking-wide min-h-screen grid content-start bg-gray-950;
+  @apply tracking-wide grid content-start bg-gray-950;
 }
 
 
