@@ -6,7 +6,7 @@ function Blog() {
         {/* HERE ARE FOR PROJECTS */}
         <h1 className="text-2xl ml-40 font-bold sm:text-center">LATEST BLOGS</h1>
         <div className="sm:grid flex items-center justify-center">
-          <div className="sm:grid sm:rid-col-2 justify-start sm:ml-40 bg-red-600">
+          <div className="sm:grid sm:rid-col-2 justify-start sm:ml-40">
             {/* BLOG HERE 1 */}
             <div className="md:flex gap-5 p-4 items-center">
               <img
