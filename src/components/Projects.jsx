@@ -1,4 +1,4 @@
-import Aramofoods from "./Projects/aramofoods";
+import Aramofoods from "./Projects/Aramofoods";
 
 const Projects = () => {
   return (
