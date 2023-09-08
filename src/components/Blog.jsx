@@ -13,9 +13,6 @@ function Blog() {
           <div className="sm:grid sm:rid-col-2 justify-start sm:ml-40">
             <ReactTricks />
             <ReactTricks />
-            <ReactTricks />
-            <ReactTricks />
-            <ReactTricks />
           </div>
         </div>
       </div>

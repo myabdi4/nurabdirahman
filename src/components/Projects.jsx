@@ -14,11 +14,6 @@ const Projects = () => {
           <div className="flex flex-wrap justify-center">
             <Aramofoods />
             <Aramofoods />
-            <Aramofoods />
-            <Aramofoods />
-            <Aramofoods />
-            <Aramofoods />
-            <Aramofoods />
           </div>
         </div>
       </div>
