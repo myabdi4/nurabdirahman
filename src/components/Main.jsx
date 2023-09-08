@@ -1,5 +1,5 @@
 import Blog from "./Blog";
-import Projects from "./projects";
+import Projects from "./Projects";
 
 const Main = () => {
   return (
