@@ -16,7 +16,7 @@ const ReactTipsTricksBlog = () => {
             />
           </div>
 
-          <p className="text-2xl p-5 sm:mx-80 sm:text-justify border-t-2 border-gray-800">
+          <p className="bg-red-500 whitespace-wrap text-2xl p-5 sm:mx-80 text-justify border-t-2 border-gray-800">
             <h2 className="py-5 text-green-500 font-bold">Why React?</h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
             suscipit a quam tenetur nobis excepturi nesciunt enim placeat,
@@ -26,7 +26,7 @@ const ReactTipsTricksBlog = () => {
             inventore, impedit aspernatur non tenetur eum minus consequatur.
             Temporibus labore odit ex consectetur quidem, magni at? Vitae cum
             odit dicta impedit vero modi suscipit? Sed repellendus
-            <br /> <br />
+            <br />
             <h2 className="py-5 text-green-500 font-bold">
               Areas Why React would succeed
             </h2>
