@@ -1,4 +1,4 @@
-const Aramofoods = () => {
+const myabdifoods = () => {
   return (
     <div>
       {/* CARDS HERE 1 */}
@@ -30,4 +30,4 @@ const Aramofoods = () => {
   );
 };
 
-export default Aramofoods;
+export default myabdifoods;
