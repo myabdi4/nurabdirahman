@@ -10,10 +10,10 @@ const ReactTricks = () => {
         />
 
         <div className="flex flex-col gap-5 pt-4 items-start">
-          <p className="sm:text-justify text-start sm:w-3/4">
+          <p className="sm:text-justify text-start sm:w-3/4 ">
             To discover my latest blogs in the fields of IT and technology,
             simply click{" "}
-            <a href="/" className="text-green-600">
+            <a href="/react-tips-tricks" className="text-green-600">
               read more
             </a>
             . There, you will find a collection of my most recent articles in
