@@ -7,7 +7,6 @@ const Main = () => {
       <div className="mainContent">
         <div className="w-auto">
           <Projects />
-          <Projects />
           <Blog />
         </div>
       </div>
