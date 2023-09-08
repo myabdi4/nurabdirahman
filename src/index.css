@@ -8,12 +8,14 @@
   @apply tracking-wide grid content-start bg-gray-950;
 }
 
-
 .url-links {
-  @apply sm:flex col-span-2 justify-end space-x-4 hidden;
+  @apply sm:flex sm:col-span-2 sm:justify-end gap-4;
 }
-
 
 .mainContent {
   @apply flex p-5 mt-5;
+}
+
+.menu-burger {
+  @apply sm:hidden flex justify-end hover:opacity-60 hover:cursor-pointer;
 }

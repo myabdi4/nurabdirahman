@@ -1,4 +1,9 @@
 const Header = () => {
+  const toggleMenu = () => {
+    const menu = document.querySelector(".url-links");
+    menu.classList.toggle("hidden");
+  };
+
   return (
     <>
       <nav className="navbar-background">
@@ -8,7 +13,8 @@ const Header = () => {
               <p className="hover:text-green-400 hover:cursor-pointer">
                 <a href="/">ABDIRAHMAN NUR</a>
               </p>
-              <ul className="url-links ">
+
+              <ul className="url-links hidden text-right">
                 <li className="hover:text-green-400 ">
                   <a href="/">PROJECTS</a>
                 </li>
@@ -19,7 +25,8 @@ const Header = () => {
                   <a href="/">ABOUT</a>
                 </li>
               </ul>
-              <p className="sm:hidden flex justify-end">
+
+              <p className={"menu-burger"} onClick={toggleMenu}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
