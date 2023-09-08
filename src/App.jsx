@@ -1,15 +1,20 @@
-import Header from "./components/Header";
-import Section from "./components/Section";
-import Main from "./components/Main";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Blog from "./pages/Blogs/Blog";
+import Projects from "./pages/Projects/Projects";
+import Error from "./pages/Error";
 
 function App() {
   return (
     <>
-      <div className="page text-white">
-        <Header />
-        <Section />
-        <Main />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

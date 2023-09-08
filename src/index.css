@@ -9,7 +9,7 @@
 }
 
 .page {
-  @apply tracking-wide grid content-start bg-gray-950;
+  @apply tracking-wide grid content-start bg-gray-950 ;
 }
 .container {
   @apply p-6 mx-auto text-white;

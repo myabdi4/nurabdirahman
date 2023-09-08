@@ -28,19 +28,19 @@ const Header = () => {
         <div className="navbar-container">
           <div className="container">
             <div className="menu-content">
-              <p className="hover-nav">
+              <p className="hover-nav font-bold">
                 <a href="/">ABDIRAHMAN NUR</a>
               </p>
 
               <ul className="url-links hidden">
                 <li className="hover-nav ">
-                  <a href="/">PROJECTS</a>
+                  <a href="/projects">PROJECTS</a>
                 </li>
                 <li className="hover-nav">
-                  <a href="/">BLOG</a>
+                  <a href="/blogs">BLOG</a>
                 </li>
                 <li className="hover-nav">
-                  <a href="/">ABOUT</a>
+                  <a href="#">ABOUT</a>
                 </li>
               </ul>
 

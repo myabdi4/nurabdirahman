@@ -5,7 +5,7 @@ const ReactTricks = () => {
       <div className="md:flex gap-5 p-3 ">
         <img
           className="sm:w-80 object-fit hover:cursor-pointer hover:shadow-lg rounded sm:ml-10"
-          src="blogs/blog.jpeg"
+          src="blogs/react.png"
           alt=""
         />
 
