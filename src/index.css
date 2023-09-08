@@ -4,18 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+.navbar-container {
+  @apply border-b border-gray-700;
+}
+
 .page {
   @apply tracking-wide grid content-start bg-gray-950;
 }
-
+.container {
+  @apply p-6 mx-auto text-white;
+}
 .url-links {
-  @apply sm:flex sm:col-span-2 sm:justify-end gap-4;
+  @apply sm:flex sm:col-span-2 sm:justify-end gap-4 text-right;
 }
 
-.mainContent {
-  @apply flex p-5 mt-5;
+.menu-content {
+  @apply sm:grid sm:grid-cols-3 grid grid-cols-2 sm:justify-center sm:space-x-4 text-lg;
 }
 
 .menu-burger {
   @apply sm:hidden flex justify-end hover:opacity-60 hover:cursor-pointer;
+}
+
+.hover-nav {
+  @apply hover:text-green-400 hover:cursor-pointer;
 }

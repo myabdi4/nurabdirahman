@@ -4,43 +4,48 @@ const Header = () => {
     menu.classList.toggle("hidden");
   };
 
+  // BURGER-MENU ICON
+  const burgerMenu = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+      />
+    </svg>
+  );
+
   return (
     <>
       <nav className="navbar-background">
-        <div className="navbar-container border-b border-gray-700">
-          <div className="container p-6 mx-auto text-white">
-            <div className="sm:grid sm:grid-cols-3 grid grid-cols-2 sm:justify-center sm:space-x-4 text-lg">
-              <p className="hover:text-green-400 hover:cursor-pointer">
+        <div className="navbar-container">
+          <div className="container">
+            <div className="menu-content">
+              <p className="hover-nav">
                 <a href="/">ABDIRAHMAN NUR</a>
               </p>
 
-              <ul className="url-links hidden text-right">
-                <li className="hover:text-green-400 ">
+              <ul className="url-links hidden">
+                <li className="hover-nav ">
                   <a href="/">PROJECTS</a>
                 </li>
-                <li className="hover:text-green-400">
+                <li className="hover-nav">
                   <a href="/">BLOG</a>
                 </li>
-                <li className="hover:text-green-400">
+                <li className="hover-nav">
                   <a href="/">ABOUT</a>
                 </li>
               </ul>
 
               <p className={"menu-burger"} onClick={toggleMenu}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
+                {burgerMenu}
               </p>
             </div>
           </div>
