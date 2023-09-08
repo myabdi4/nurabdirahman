@@ -8,7 +8,9 @@ function Error() {
         <div className="flex text-center justify-center items-center bg-red-900 h-screen text-4xl">
           <p>
             THE PAGE YOU ENTERED{" "}
-            <em className="text-green-950 font-bold">DOES NOT EXIST!</em>
+            <em className="text-green-950 font-bold">
+              DOES NOT EXIST AT THE MOMENT!
+            </em>
           </p>
         </div>
       </div>
