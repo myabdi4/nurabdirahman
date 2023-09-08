@@ -1,13 +1,17 @@
+import ReactTricks from "./ReactTricks";
 import Header from "../../components/Header";
+
 function Blog() {
   return (
     <>
-      <div className="page text-white h-screen">
+      <div className="page">
         <Header />
-        <div className="flex text-center justify-center items-center bg-blue-700 h-screen text-4xl">
-          <p>
-            THE <em className="text-green-950 font-bold">BLOG</em> PAGE IS COMING SOON!
-          </p>
+        <div className="flex flex-col text-center justify-center items-center pt-10 text-white sm:ml-40">
+          <ReactTricks />
+          <ReactTricks />
+          <ReactTricks />
+          <ReactTricks />
+
         </div>
       </div>
     </>

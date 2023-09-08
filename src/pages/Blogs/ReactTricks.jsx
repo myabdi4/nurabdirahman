@@ -12,12 +12,16 @@ const ReactTricks = () => {
         <div className="flex flex-col gap-5 pt-4 items-start">
           <p className="sm:text-justify text-start sm:w-3/4">
             To discover my latest blogs in the fields of IT and technology,
-            simply click <a href="/" className="text-green-600">read more</a>. There, you will find a
-            collection of my most recent articles in these domains.
+            simply click{" "}
+            <a href="/" className="text-green-600">
+              read more
+            </a>
+            . There, you will find a collection of my most recent articles in
+            these domains.
           </p>
           <div>
             <a
-              href="https://github.com/myabdi4/myabdifoods"
+              href="/react-tips-tricks"
               target="_blink"
               className=" p-2 rounded bg-green-800 w-max"
             >
