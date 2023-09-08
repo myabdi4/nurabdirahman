@@ -1,0 +1,11 @@
+# Redirect to blog page
+
+/blogs/\* /blogs/:splat 200
+
+# Redirect to project page
+
+/projects/\* /projects/:splat 200
+
+# Redirect all other paths to a custom error page
+
+/\* /error-page.html 200
