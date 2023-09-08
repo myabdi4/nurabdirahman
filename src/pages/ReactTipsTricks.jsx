@@ -16,8 +16,8 @@ const ReactTipsTricksBlog = () => {
             />
           </div>
 
-          <p className="bg-red-500 whitespace-wrap text-2xl p-5 sm:mx-80 text-justify border-t-2 border-gray-800">
-            <h2 className="py-5 text-green-500 font-bold">Why React?</h2>
+          <p className="whitespace-wrap text-2xl p-5 sm:mx-80 tracking-normal text-justify border-t-2 border-gray-800">
+            <h2 className="pb-5 text-green-500 font-bold">Why React?</h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
             suscipit a quam tenetur nobis excepturi nesciunt enim placeat,
             doloremque esse, veritatis ipsum tempore fugit illo, temporibus
@@ -27,7 +27,7 @@ const ReactTipsTricksBlog = () => {
             Temporibus labore odit ex consectetur quidem, magni at? Vitae cum
             odit dicta impedit vero modi suscipit? Sed repellendus
             <br />
-            <h2 className="py-5 text-green-500 font-bold">
+            <h2 className="pb-1 pt-5 text-green-500 font-bold">
               Areas Why React would succeed
             </h2>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex impedit
@@ -52,7 +52,7 @@ const ReactTipsTricksBlog = () => {
             obcaecati totam praesentium dolorum ratione eum modi laboriosam!
             Amet aliquam ullam mollitia debitis non?
             <br />
-            <h2 className="py-5 text-green-500 font-bold">
+            <h2 className="pb-1 pt-5 text-green-500 font-bold">
               The Struggles are real
             </h2>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex impedit
@@ -63,7 +63,7 @@ const ReactTipsTricksBlog = () => {
             obcaecati totam praesentium dolorum ratione eum modi laboriosam!
             Amet aliquam ullam mollitia debitis non?
             <br /> <br />
-            <h2 className="py-5 text-green-500 font-bold">In Conlusion</h2>
+            <h2 className="pb-1 pt-5 text-green-500 font-bold">In Conlusion</h2>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex impedit
             illum adipisci voluptatum voluptates tempora, autem laborum eaque,
             laboriosam pariatur corporis modi magni porro voluptas aliquam ipsa
