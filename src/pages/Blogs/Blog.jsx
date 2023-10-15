@@ -8,10 +8,6 @@ function Blog() {
         <Header />
         <div className="flex flex-col text-center justify-center items-center pt-10 text-white sm:ml-40">
           <ReactTricks />
-          <ReactTricks />
-          <ReactTricks />
-          <ReactTricks />
-
         </div>
       </div>
     </>
