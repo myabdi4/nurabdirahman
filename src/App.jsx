@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import Blog from "./pages/Blogs/Blog";
 import Projects from "./pages/Projects/Projects";
 import Error from "./pages/Error";
-import ReactTipsTricksBlog from "./pages/ReactTipsTricks";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Route path="*" element={<Error />} />
 
           {/* blog pages */}
-          <Route path="/react-tips-tricks" element={<ReactTipsTricksBlog />} />
         </Routes>
       </BrowserRouter>
     </>

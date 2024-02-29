@@ -1,6 +1,3 @@
-import MybdiFoods from "../pages/Projects/Myabdi4Foods";
-import ReactTricks from "../pages/Blogs/ReactTricks";
-
 const Main = () => {
   return (
     <>
