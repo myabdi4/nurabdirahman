@@ -38,3 +38,19 @@ body {
 
 }
 
+
+/* Add this to your CSS file */
+.image-zoom {
+  overflow: hidden;
+  /* Ensure the image doesn't overflow its container */
+}
+
+.image-zoom img {
+  transition: transform 0.4s ease;
+  /* Add transition for smooth zoom effect */
+}
+
+.image-zoom:hover img {
+  transform: scale(1.1);
+  /* Zoom in the image on hover */
+}

@@ -8,7 +8,7 @@ const heroSectionclean = () => {
             <div className='p-6 sm:flex justify-center'>
                 <div className='grid sm:flex sm:gap-10 justify-center'>
                     <div className="sm:card sm:w-[310px] sm:w-[448px] bg-base-100 shadow-x">
-                        <figure><img src={profileImage} alt="Shoes" className='rounded-lg' /></figure>
+                        <figure className='image-zoom'><img src={profileImage} alt="Shoes" className='.image-zoom rounded-lg cursor-pointer'/></figure>
                     </div>
                     <div className="sm:card sm:w-[310px] sm:w-[448px] bg-base-100 shadow-xl pb-10">
                         <div className="sm:card-body p-3">
