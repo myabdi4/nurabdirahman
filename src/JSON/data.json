@@ -1,17 +1,17 @@
 {
     "projects": [
         {
-            "imageSource":"/public/images/image1.png",
+            "imageSource":"/images/image1.png",
             "projectTitle": "Project One",
             "projectDescription": "A revolutionary app that simplifies daily tasks and boosts productivity.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?"
         },
         {
-            "imageSource": "/public/images/image2.png",
+            "imageSource": "/images/image2.png",
             "projectTitle": "Project Two",
             "projectDescription": "An immersive web application that connects people from around the world through virtual experiences. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?"
         },
         {
-            "imageSource": "/public/images/image2.png",
+            "imageSource": "/images/image2.png",
             "projectTitle": "Project Three",
             "projectDescription": "A cutting-edge software solution that optimizes business processes and drives efficiency.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?"
         }
