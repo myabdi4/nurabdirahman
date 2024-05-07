@@ -1,7 +1,5 @@
 import HeroSection from "./HeroSection"
 import LatestUplods from "./LatestUploads"
-
-
 const Section = () => {
   return (
     <>

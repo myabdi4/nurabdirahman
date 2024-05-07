@@ -29,7 +29,11 @@ body {
   @apply sm:hidden flex hover:opacity-60 hover:cursor-pointer;
 }
 
+.btn {
+  @apply w-40;
+}
+
 .hover-nav {
-  @apply hover:shadow hover:cursor-pointer hover:bg-base-100 hover:w-fit p-2 rounded-box hover:underline underline-offset-8;
+  @apply hover:shadow hover:cursor-pointer hover:bg-base-100 hover:bg-inherit hover:text-white p-2 hover:underline underline-offset-8 ;
 
 }
