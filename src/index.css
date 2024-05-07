@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(3 7 18) !important;
+  /* background-color: rgb(3 7 18)!important;
+  height: 100%; */
 }
 .navbar-container {
   @apply border-b border-gray-700;
@@ -19,7 +20,7 @@ body {
 }
 
 .menu-content {
-  @apply sm:grid sm:grid-cols-3 grid grid-cols-2 sm:justify-center sm:space-x-4 text-lg;
+  @apply sm:grid sm:grid-cols-3 grid grid-cols-2 sm:justify-center sm:space-x-4 text-lg space-x-20 items-center;
 }
 
 .menu-burger {
@@ -27,5 +28,6 @@ body {
 }
 
 .hover-nav {
-  @apply hover:text-green-400 hover:cursor-pointer;
+  @apply hover:shadow hover:cursor-pointer hover:bg-base-100 hover:w-fit p-2 rounded-box;
+  
 }

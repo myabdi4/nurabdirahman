@@ -28,10 +28,9 @@ const Header = () => {
         <div className="navbar-container">
           <div className="container">
             <div className="menu-content">
-              <p className="hover-nav font-bold">
-                <a href="/">ABDIRAHMAN NUR</a>
-              </p>
-
+              <div> 
+                <p className="hover-nav font-bold"><a href="/">ABDIRAHMAN NUR</a></p>
+              </div>
               <ul className="url-links hidden">
                 <li className="hover-nav ">
                   <a href="/projects">PROJECTS</a>
@@ -44,12 +43,35 @@ const Header = () => {
                 </li>
               </ul>
 
-              <p className={"menu-burger"} onClick={toggleMenu}>
-                {burgerMenu}
-              </p>
+              {/* BIG SCREEN */}
+              <div className="sm:hidden">
+                <details className="dropdown">
+                  <summary className="m-2 btn justify-center">{burgerMenu}</summary>
+                    <ul className="p-2 w-32 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-42">
+                      <li><a href="/projects">PROJECTS</a></li>
+                      <li><a href="/projects">BLOGS</a></li>
+                      <li><a href="/projects">CONTACT</a></li>
+                    </ul>
+                </details>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Open the modal using document.getElementById('ID').showModal() method */}
+        <div className="p-5 grid items-end ">
+        <button className="btn" onClick={()=>document.getElementById('my_modal_2').showModal()}>CHECK SITE STATUS</button>
+        <dialog id="my_modal_2" className="modal">
+          <div className="modal-box">
+            <h3 className="font-bold text-lg">Hello!</h3>
+            <p className="py-4 text-center">THIS WEBSITE IS UNDER CONSTRUCTION!</p>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+        </div>
+        
       </nav>
     </>
   );
