@@ -8,26 +8,28 @@ body {
   /* background-color: rgb(3 7 18)!important;
   height: 100%; */
 }
+
 .navbar-container {
   @apply border-b border-gray-700;
 }
 
 .container {
-  @apply p-6 mx-auto text-white;
+  @apply p-6 lg:px-32 mx-auto text-white justify-between;
 }
+
 .url-links {
   @apply sm:flex sm:col-span-2 sm:justify-end gap-4 text-right;
 }
 
 .menu-content {
-  @apply sm:grid sm:grid-cols-3 grid grid-cols-2 sm:justify-center sm:space-x-4 text-lg space-x-20 items-center;
+  @apply sm:grid sm:grid-cols-3 grid grid-cols-2 sm:justify-center sm:space-x-4 text-lg items-center;
 }
 
 .menu-burger {
-  @apply sm:hidden flex justify-end hover:opacity-60 hover:cursor-pointer;
+  @apply sm:hidden flex hover:opacity-60 hover:cursor-pointer;
 }
 
 .hover-nav {
-  @apply hover:shadow hover:cursor-pointer hover:bg-base-100 hover:w-fit p-2 rounded-box;
-  
+  @apply hover:shadow hover:cursor-pointer hover:bg-base-100 hover:w-fit p-2 rounded-box hover:underline underline-offset-8;
+
 }

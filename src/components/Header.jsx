@@ -1,9 +1,6 @@
-const Header = () => {
-  const toggleMenu = () => {
-    const menu = document.querySelector(".url-links");
-    menu.classList.toggle("hidden");
-  };
+import svgs from './svgs.json'
 
+const Header = () => {
   // BURGER-MENU ICON
   const burgerMenu = (
     <svg
@@ -22,57 +19,44 @@ const Header = () => {
     </svg>
   );
 
+  const projectsIcon = svgs.projectsIcon;
+
   return (
     <>
-      <nav className="navbar-background">
-        <div className="navbar-container">
-          <div className="container">
-            <div className="menu-content">
-              <div> 
-                <p className="hover-nav font-bold"><a href="/">ABDIRAHMAN NUR</a></p>
-              </div>
-              <ul className="url-links hidden">
-                <li className="hover-nav ">
-                  <a href="/#">PROJECTS</a>
-                </li>
-                <li className="hover-nav">
-                  <a href="/#">BLOG</a>
-                </li>
-                <li className="hover-nav">
-                  <a href="/#">CONTACT ME</a>
-                </li>
-              </ul>
 
-              {/* BIG SCREEN */}
-              <div className="sm:hidden">
-                <details className="dropdown">
-                  <summary className="m-2 btn justify-center">{burgerMenu}</summary>
-                    <ul className="p-2 w-32 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-42">
-                      <li><a href="/projects">PROJECTS</a></li>
-                      <li><a href="/projects">BLOGS</a></li>
-                      <li><a href="/projects">CONTACT</a></li>
-                    </ul>
-                </details>
-              </div>
+      <div className="navbar-container">
+        <div className="container">
+          <div className="menu-content">
+            <div>
+              <p className="hover-nav font-bold"><a href="/">ABDIRAHMAN NUR</a></p>
+            </div>
+            <ul className="url-links hidden">
+              <li className="hover-nav ">
+                <a href="/#"> PROJECTS</a>
+              </li>
+              <li className="hover-nav">
+                <a href="/#">BLOG</a>
+              </li>
+              <li className="hover-nav">
+                <a href="/#">ABOUT</a>
+              </li>
+            </ul>
+
+            {/* SMALL SCREEN */}
+            <div className="sm:hidden">
+              <details className="dropdown px-28">
+                <summary className="m-2 btn border border-gray-500 px-22">{burgerMenu}</summary>
+                <ul className="p-2 border border-white shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32 left-12">
+                  <li><a href="/#">PROJECTS</a></li>
+                  <li><a href="/#">BLOGS</a></li>
+                  <li><a href="/#">ABOUT </a></li>
+                </ul>
+              </details>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Open the modal using document.getElementById('ID').showModal() method */}
-        <div className="p-5 grid items-end ">
-        <button className="btn" onClick={()=>document.getElementById('my_modal_2').showModal()}>CHECK SITE STATUS</button>
-        <dialog id="my_modal_2" className="modal">
-          <div className="modal-box">
-            <h3 className="font-bold text-lg">Hello!</h3>
-            <p className="py-4 text-center">THIS WEBSITE IS UNDER CONSTRUCTION!</p>
-          </div>
-          <form method="dialog" className="modal-backdrop">
-            <button>close</button>
-          </form>
-        </dialog>
-        </div>
-        
-      </nav>
     </>
   );
 };
