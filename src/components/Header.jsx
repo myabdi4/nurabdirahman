@@ -44,7 +44,7 @@ const Header = () => {
 
             {/* SMALL SCREEN */}
             <div className="sm:hidden">
-              <details className="dropdown px-12">
+              <details className="dropdown sm:px-8">
                 <summary className="m-2 btn border border-gray-500 px-18">{burgerMenu}</summary>
                 <ul className="p-2 border border-white shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32 left-12">
                   <li><a href="/#">PROJECTS</a></li>
