@@ -1,7 +1,11 @@
 import Card from "./Card"
 import BlogCards from "./BlogCards"
+import jsonData from '../JSON/data.json'; // Import JSON data
+
+
 
 const LatestUplods = () => {
+    const { projects, blogs} = jsonData; // Destructure projectTitle from JSON data
     return (
         <>
             <div className="grid justify-center px-20 gap-2 p-2 text-lg">
@@ -10,9 +14,9 @@ const LatestUplods = () => {
                         <a className="p-5 hover-nav">LASTEST PROJECTS</a>
                     </div>
                     <div className="grid sm:grid-cols-2 gap-5 justify-between pt-8">
-                        <Card />
-                        <Card />
-                        <Card />
+                        {projects.map((project, index1) => (
+                            <Card key={index1} imageSource={project.imageSource} projectTitle={project.projectTitle} projectDescription={project.projectDescription} />
+                        ))}
                         
                     </div>
                 </div>
@@ -22,10 +26,9 @@ const LatestUplods = () => {
                         <a className="p-5 hover-nav font-bold">LATEST BLOGS</a>
                     </div>
                     <div className="grid sm:grid-cols-1 justify-center gap-5 pt-8 border border-slate-600 shadow-sm shadow-zinc-300 p-2">
-                        <BlogCards />
-                        <BlogCards />
-                        <BlogCards />
-                        <BlogCards />
+                        {blogs.map((blog, index2) => (
+                            <BlogCards key={index2} blogTitle={blog.blogTitle} blogDescription={blog.blogDescription} />
+                        ))}
                     </div>
                 </div>
 

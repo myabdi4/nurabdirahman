@@ -4,12 +4,12 @@ import { FaGithub, FaSquareXTwitter, FaReact } from "react-icons/fa6";
 const Footer = () => {
     return (
         <>
-            <footer className="footer items-center p-4 bg-neutral sm:text-neutral-content">
+            <footer className="footer sm:grid flex sm:justify-between justify-center sm:items-center p-4 bg-neutral sm:text-neutral-content">
                 <aside className="items-center grid-flow-col">
-                    {<PiNumberCircleFourFill className="w-8 h-8" />}
+                    {<PiNumberCircleFourFill className="w-6 h-6" />}
                     <p>Copyright © 2024 - All right reserved</p>
                 </aside>
-                <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                <nav className="flex sm:grid-flow-col gap-4 md:place-self-center md:justify-self-end">
                     <a className="cursor-pointer"> {<FaGithub className="w-6 h-6" />}</a>
                     <a className="cursor-pointer"> {<FaSquareXTwitter className="w-6 h-6" />}</a>
                     <a className="cursor-pointer"> {<FaReact className="w-6 h-6" />}</a>
