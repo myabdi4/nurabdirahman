@@ -33,10 +33,10 @@ const Header = () => {
               </div>
               <ul className="url-links hidden">
                 <li className="hover-nav ">
-                  <a href="/projects">PROJECTS</a>
+                  <a href="/#">PROJECTS</a>
                 </li>
                 <li className="hover-nav">
-                  <a href="/blogs">BLOG</a>
+                  <a href="/#">BLOG</a>
                 </li>
                 <li className="hover-nav">
                   <a href="/#">CONTACT ME</a>
