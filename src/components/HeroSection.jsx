@@ -5,7 +5,7 @@ const heroSectionclean = () => {
     return (
         <>
             {/* HERO SECITON */}
-            <div className='p-4 md:flex gap-10 px-16 justify-center pb-2'>
+            <div className='p-4 md:flex gap-10 px-14 justify-center pb-2'>
                 <div className="sm:card w-[310px] sm:w-[448px] bg-base-100 shadow-xl">
                     <figure><img src={profileImage} alt="Shoes" className='rounded-lg' /></figure>
                 </div>
