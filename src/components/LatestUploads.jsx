@@ -13,7 +13,7 @@ const LatestUplods = () => {
                     <div className="flex gap-5 tabs tabs-boxed justify-center cursor-pointer">
                         <a className="p-5 hover-nav">LASTEST PROJECTS</a>
                     </div>
-                    <div className="grid sm:grid-cols-2 gap-5 justify-between pt-8">
+                    <div className="grid sm:grid-cols-2 gap-8 justify-between pt-4">
                         {projects.map((project, index1) => (
                             <Card key={index1} imageSource={project.imageSource} projectTitle={project.projectTitle} projectDescription={project.projectDescription} />
                         ))}

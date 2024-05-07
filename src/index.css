@@ -34,7 +34,7 @@ body {
 }
 
 .hover-nav {
-  @apply hover:shadow hover:cursor-pointer hover:bg-base-100 hover:bg-inherit hover:text-white p-2 hover:underline underline-offset-8 ;
+  @apply hover:shadow hover:cursor-pointer hover:bg-base-100 hover:bg-inherit hover:text-white hover:underline underline-offset-8 ;
 
 }
 
