@@ -27,7 +27,7 @@ const LatestUplods = () => {
                     </div>
                     <div className="grid sm:grid-cols-1 justify-center gap-5 pt-8 border border-slate-600 shadow-sm shadow-zinc-300 p-2">
                         {blogs.map((blog, index2) => (
-                            <BlogCards key={index2} blogTitle={blog.blogTitle} blogDescription={blog.blogDescription} />
+                            <BlogCards key={index2} blogTitle={blog.blogTitle} blogDescription={blog.blogDescription} blogLink = {blog.blogLink} />
                         ))}
                     </div>
                 </div>

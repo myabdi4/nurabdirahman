@@ -1,9 +1,10 @@
 {
     "projects": [
         {
-            "imageSource":"/images/image1.png",
+            "imageSource": "/images/image1.png",
             "projectTitle": "Project One",
-            "projectDescription": "A revolutionary app that simplifies daily tasks and boosts productivity.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?"
+            "projectDescription": 
+            "A revolutionary app that simplifies daily tasks and boosts productivity.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?"
         },
         {
             "imageSource": "/images/image2.png",
@@ -16,19 +17,21 @@
             "projectDescription": "A cutting-edge software solution that optimizes business processes and drives efficiency.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?"
         }
     ],
-
     "blogs": [
         {
-            "blogTitle": "The First Blog",
-            "blogDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?"
+            "blogTitle": "The Ultimate Challeges of Using ROUTING in REACT ",
+            "blogDescription": "Routing in React is a headache but with little tricks, it can be done! I hated routing in react, which is why, this page leads to a Medium websites that explains it all..",
+            "blogLink": "https://medium.com/@blessingmba3/introduction-to-react-router-da64380ca778"
         },
         {
             "blogTitle": "You Are Rading Blog Two",
-            "blogDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?"
+            "blogDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?",
+            "blogLink": "https://example.com/project1"
         },
         {
             "blogTitle": "Is this a Blog?",
-            "blogDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?"
+            "blogDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?",
+            "blogLink": "https://example.com/project2"
         }
     ]
 }

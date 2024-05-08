@@ -48,7 +48,8 @@ const Header = () => {
                 <summary className="m-2 btn border border-gray-500 px-18">{burgerMenu}</summary>
                 <ul className="p-2 border border-white shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32 left-12">
                   <li><a href="/#">PROJECTS</a></li>
-                  <li><a href="/#">BLOGS</a></li>
+                  {/* WHAT SHOULD HAPPEN WHEN YOU CLICK BLOG? */}
+                  <li><a href="./BlogCard.jsx">BLOGS</a></li>
                   <li><a href="/#">ABOUT </a></li>
                 </ul>
               </details>
