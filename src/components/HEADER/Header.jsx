@@ -1,4 +1,4 @@
-import svgs from './svgs.json'
+import svgs from '../../JSON/svgs.json'
 
 const Header = () => {
   // BURGER-MENU ICON

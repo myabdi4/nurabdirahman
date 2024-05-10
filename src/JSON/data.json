@@ -1,10 +1,10 @@
 {
     "projects": [
         {
-            "imageSource": "/images/image1.png",
-            "projectTitle": "Project One",
+            "imageSource": "/images/blogImages/image.png",
+            "projectTitle": "MY BLOG PAGE",
             "projectDescription": 
-            "A revolutionary app that simplifies daily tasks and boosts productivity.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt totam vitae provident officiis, non quisquam dolores libero qui ipsam sed incidunt nemo corporis aperiam deleniti maiores culpa praesentium minima?"
+            "In my blog, I delve into a myriad of topics that captivate me, spanning from the intricate world of IT to everything else that piques my interest, including literature, culinary delights, and beyond. It's a space where I share my insights, discoveries, and passions, inviting readers to join me on a journey.... "
         },
         {
             "imageSource": "/images/image2.png",

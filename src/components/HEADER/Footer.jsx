@@ -10,9 +10,9 @@ const Footer = () => {
                     <p>Copyright © 2024 - All right reserved</p>
                 </aside>
                 <nav className="flex sm:grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-                    <a className="cursor-pointer"> {<FaGithub className="w-6 h-6" />}</a>
-                    <a className="cursor-pointer"> {<FaSquareXTwitter className="w-6 h-6" />}</a>
-                    <a className="cursor-pointer"> {<FaReact className="w-6 h-6" />}</a>
+                    <a href="https://github.com/myabdi4" target="_blank" rel="noopener noreferrer" className="cursor-pointer"> {<FaGithub className="w-6 h-6" />}</a>
+                    <a href="https://twitter.com/nurabdirahman4" target="_blank" rel="noopener noreferrer" className="cursor-pointer"> {<FaSquareXTwitter className="w-6 h-6" />}</a>
+                    <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer" className="cursor-pointer"> {<FaReact className="w-6 h-6" />}</a>
                 </nav>
             </footer>
         </>

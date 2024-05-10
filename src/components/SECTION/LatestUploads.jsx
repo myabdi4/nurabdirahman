@@ -1,6 +1,6 @@
 import Card from "./Card"
 import BlogCards from "./BlogCards"
-import jsonData from '../JSON/data.json'; // Import JSON data
+import jsonData from '../../JSON/data.json'; // Import JSON data
 
 
 
