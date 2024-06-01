@@ -9,8 +9,8 @@ const LatestUplods = () => {
     const { projects, blogs } = jsonData; // Destructure projectTitle from JSON data
     return (
         <>
-            <div className="grid justify-center  p-2 text-lg">
-                <div className="p-5">
+            <div className="grid justify-center p-2 text-lg">
+                <div className="">
                     <HeaderTitle title={"PROJECT POSTS"} />
                     <div className="grid sm:grid-cols-3 gap-6 justify-between pt-4">
                         {projects.map((project, index1) => (
@@ -20,9 +20,9 @@ const LatestUplods = () => {
                     </div>
                 </div>
 
-                <div className="p-5 justify-center">
-                    <HeaderTitle title = {"BLOG POSTS"} />
-                    <div className="grid sm:grid-cols-1 justify-center gap-5 pt-8 p-2">
+                <div className=" justify-center pt-8">
+                    <HeaderTitle title={"BLOG POSTS"} />
+                    <div className="grid sm:grid-cols-1 justify-center gap-5 pt-4 ">
                         {blogs.map((blog, index2) => (
                             <BlogPost key={index2} blogTitle={blog.blogTitle} blogDescription={blog.blogDescription} blogLink={blog.blogLink} />
                         ))}
