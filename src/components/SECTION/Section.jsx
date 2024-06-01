@@ -1,12 +1,10 @@
-import HeroSection from "./HeroSection"
-import LatestUplods from "./LatestUploads"
-import ContactForm from "./ContactForm"
+import HeroSection from "./HERO/HeroSection"
+import LatestUplods from "./LATESTBP/LatestUploads"
 const Section = () => {
   return (
     <>
       <HeroSection />
       <LatestUplods />
-      <ContactForm/>
     </>
   );
 }

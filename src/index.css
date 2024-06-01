@@ -4,11 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* background-color: rgb(3 7 18)!important;
-  height: 100%; */
-}
-
 .navbar-container {
   @apply border-b border-gray-700;
 }
@@ -34,7 +29,7 @@ body {
 }
 
 .hover-nav {
-  @apply hover:shadow hover:cursor-pointer hover:bg-base-100 hover:bg-inherit hover:text-white hover:underline underline-offset-8 ;
+  @apply hover:shadow hover:cursor-pointer hover:bg-base-100 hover:bg-inherit hover:text-white hover:underline underline-offset-8;
 
 }
 

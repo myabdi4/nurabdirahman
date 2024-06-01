@@ -1,5 +1,3 @@
-import svgs from '../../JSON/svgs.json'
-
 const Header = () => {
   // BURGER-MENU ICON
   const burgerMenu = (
@@ -19,12 +17,12 @@ const Header = () => {
     </svg>
   );
 
-  const projectsIcon = svgs.projectsIcon;
+
 
   return (
     <>
 
-      <div className="navbar-container">
+      <nav className="navbar-container">
         <div className="container">
           <div className="menu-content">
             <div>
@@ -56,7 +54,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
 
     </>
   );

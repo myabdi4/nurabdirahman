@@ -1,13 +1,13 @@
 import Header from './components/HEADER/Header'
-import Section from './components/SECTION/Section'
 import Footer from './components/HEADER/Footer'
+import Section from './components/SECTION/Section'
 
 function App() {
   return (
     <>
       <Header />
       <Section />
-      <Footer />
+      <Footer/>
     </>
   );
 }

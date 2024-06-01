@@ -1,4 +1,4 @@
-import profileImage from '../../../public/images/profile.jpg'
+import profileImage from '/images/profile.jpg'
 import { FaGithub, FaSquareXTwitter, FaReact } from "react-icons/fa6";
 
 const heroSectionclean = () => {
@@ -12,15 +12,16 @@ const heroSectionclean = () => {
                     </div>
                     <div className="sm:card w-[400px] sm:w-[460px] bg-base-100 shadow-xl pb-10">
                         <div className="sm:card-body p-3">
-                            <h2 className="sm:card-title text-center pt-5 font-bold">ABDIRAHMAN NUR</h2>
-                            <p className='pt-5 sm:text-justify sm:text-lg'>Hello, I am a front-end developer and an aspiring back-end developer,
+                            <h2 className="sm:card-title text-center pt-5 font-medium text-green-500">ABDIRAHMAN NUR</h2>
+                            <p className='pt-5 sm:text-justify sm:text-lg'>
+                                Hello, I am a front-end developer and an aspiring web designer,
                                 my interests are mostly in web development. You can find both my projects and my
                                 blogs here. Have fun! This portfolio is constantly expanding, as I add more blogs and
                                 projects.
                             </p>
-                            <div className='flex justify-center pt-5'>
+                            <div className='flex pt-4'>
                                 {/* MY SOCIALS */}
-                                <ul className="menu menu-horizontal rounded-lg bg-black">
+                                <ul className="menu menu-horizontal">
                                     <a href=""></a>
                                     <li><a href="https://github.com/myabdi4" target="_blank" rel="noopener noreferrer"><FaGithub className='w-6 h-6' /></a></li>
                                     <li><a href="https://twitter.com/nurabdirahman4" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter className='w-6 h-6' /></a></li>
