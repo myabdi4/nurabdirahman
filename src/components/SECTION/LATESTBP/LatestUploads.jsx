@@ -16,13 +16,12 @@ const LatestUplods = () => {
                         {projects.map((project, index1) => (
                             <ProjectCards key={index1} imageSource={project.imageSource} projectTitle={project.projectTitle} projectDescription={project.projectDescription} />
                         ))}
-
                     </div>
                 </div>
 
                 <div className=" justify-center pt-8">
                     <HeaderTitle title={"BLOG POSTS"} />
-                    <div className="grid sm:grid-cols-1 justify-center gap-5 pt-4 ">
+                    <div className="grid sm:grid-cols-1 justify-center gap-5 p-10 rounded-md justify-items-center">
                         {blogs.map((blog, index2) => (
                             <BlogPost key={index2} blogTitle={blog.blogTitle} blogDescription={blog.blogDescription} blogLink={blog.blogLink} />
                         ))}
