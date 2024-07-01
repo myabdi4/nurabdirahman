@@ -19,7 +19,7 @@ const LatestUplods = () => {
                     </div>
                 </div>
 
-                <div className=" justify-center pt-8">
+                <div className=" justify-center pt-4">
                     <HeaderTitle title={"BLOG POSTS"} />
                     <div className="grid sm:grid-cols-1 justify-center gap-5 p-10 rounded-md justify-items-center">
                         {blogs.map((blog, index2) => (
