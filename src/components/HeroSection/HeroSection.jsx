@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./Herosection.css";
 import hero_banner from "../../assets/hero_banner.jpg";
 

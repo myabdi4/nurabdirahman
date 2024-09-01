@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "../../components/HeroSection/HeroSection";
@@ -8,7 +8,6 @@ const Home = () => {
     <div className="home">
       <Navbar />
       <HeroSection />
-      
     </div>
   );
 };
