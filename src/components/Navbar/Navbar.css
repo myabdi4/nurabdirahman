@@ -12,6 +12,12 @@
   );
   z-index: 1;
 }
+
+.nav-dark {
+  background-color: black;
+  opacity: 0.8;
+}
+
 .navbar .navbar-right {
   display: flex;
   align-items: center;

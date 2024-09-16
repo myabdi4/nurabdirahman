@@ -1,6 +1,7 @@
 // import React from "react";
 import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
+import { useRef, useEffect } from "react";
 
 // IMPORT IMAGES AND ICONS
 import navbar_logo from "../../assets/abdirahmannurlogo.png";
@@ -10,14 +11,25 @@ import DropdownComponent from "./DropdownComponent";
 
 const Navbar = ({ setCategory }) => {
   const navigate = useNavigate();
+  const navRef = useRef();
 
   // HANDLE NAVIGATION
   const handleNavigation = (path) => {
     navigate(path);
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 80) {
+        navRef.current.classList.add("nav-dark");
+      } else {
+        navRef.current.classList.remove("nav-dark");
+      }
+    });
+  }, []);
+
   return (
-    <div className="navbar">
+    <div className="navbar" ref={navRef}>
       <div className="navbar-right">
         <img src={navbar_logo} alt="" />
         <ul>
