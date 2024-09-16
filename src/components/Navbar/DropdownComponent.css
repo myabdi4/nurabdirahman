@@ -1,0 +1,10 @@
+.dropdown {
+  cursor: pointer;
+}
+
+
+@media (max-width: 680px) {
+ .navbar-right img {
+   display: none;
+ }
+}

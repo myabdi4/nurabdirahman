@@ -11,8 +11,8 @@
     transparent
   );
   z-index: 1;
+  
 }
-
 .navbar .navbar-right {
   display: flex;
   align-items: center;
@@ -41,6 +41,8 @@
 
 .navbar-left {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -49,8 +51,14 @@
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
-  .navbar .navbar-right li {
+@media (max-width: 680px) {
+  .navbar-right img {
+    display: none;
+  }
+}
+
+@media (max-width: 1030px) {
+  .navbar-left img {
     display: none;
   }
 }

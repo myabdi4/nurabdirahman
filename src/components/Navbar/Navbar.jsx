@@ -6,8 +6,9 @@ import { useNavigate } from "react-router-dom";
 import navbar_logo from "../../assets/abdirahmannurlogo.png";
 import search_icon from "../../assets/search_icon.svg";
 import bell_icon from "../../assets/bell_icon.svg";
+import DropdownComponent from "./DropdownComponent";
 
-const Navbar = () => {
+const Navbar = ({ setCategory }) => {
   const navigate = useNavigate();
 
   // HANDLE NAVIGATION
@@ -26,7 +27,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-left">
-        {/* <input type="text" /> */}
+        <DropdownComponent setCategory={setCategory} />
         <img src={search_icon} alt="" className="icons" />
         <img src={bell_icon} alt="" className="icons" />
       </div>

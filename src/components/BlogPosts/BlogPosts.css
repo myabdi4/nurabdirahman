@@ -1,0 +1,23 @@
+.display-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.display-items span {
+  position: absolute;
+  display: flex;
+  background-color: red;
+  left: 50px;
+  top: 15%;
+  padding-bottom: 20px;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 140px 120px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
