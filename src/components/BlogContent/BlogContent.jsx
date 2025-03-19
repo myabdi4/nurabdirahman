@@ -1,7 +1,7 @@
 import React from "react";
 
 const BlogContent = () => {
-  return <div className="blogcontent">hey</div>;
+  return <div className="bg-red-500">THIS BLOG IS STILL UNDER DEVELOPMENT</div>;
 };
 
 export default BlogContent;
