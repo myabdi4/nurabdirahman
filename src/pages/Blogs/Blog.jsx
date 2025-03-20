@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import { useState } from "react";
 
 const Blog = () => {
-  const [category, setCategory] = useState("Technology");
+  const [category, setCategory] = useState("");
   return (
     <div className="blogs">
       <Navbar setCategory={setCategory} />

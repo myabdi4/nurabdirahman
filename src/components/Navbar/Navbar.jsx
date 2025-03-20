@@ -29,9 +29,9 @@ const Navbar = ({ setCategory }) => {
   }, []);
 
   return (
-    <div className="flex justify-between items-center p-4" ref={navRef}>
+    <div className="flex justify-between items-center p-4 text-xl" ref={navRef}>
       <div className="flex justify-between items-center gap-4">
-        <img src={navbar_logo} alt="" className="h-28" />
+        <img src={navbar_logo} alt="" className="w-52" />
         <ul className="flex gap-4">
           <li
             className="cursor-pointer hover:text-green-500"
@@ -57,8 +57,8 @@ const Navbar = ({ setCategory }) => {
         {location.pathname === "/blogs" && (
           <DropdownComponent setCategory={setCategory} />
         )}
-        <img src={search_icon} alt="" className="icons" />
-        <img src={bell_icon} alt="" className="icons" />
+        <img src={search_icon} alt="" className="w-6" />
+        <img src={bell_icon} alt="" className="w-6" />
       </div>
     </div>
   );

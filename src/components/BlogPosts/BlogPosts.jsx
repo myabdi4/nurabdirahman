@@ -16,18 +16,23 @@ const BlogPosts = ({ category }) => {
   }, [category]);
 
   return (
-    <div className="flex flex-wrap justify-center gap-4 p-4">
-      {articles.map((news, index) => {
-        return (
-          <Blog
-            key={index}
-            title={news.title}
-            description={news.description}
-            src={news.urlToImage}
-            url={news.url}
-          />
-        );
-      })}
+    <div className="flex flex-col">
+      <div className="flex justify-center items-center text-3xl uppercase">
+        {category ? category : "Choose a category"}
+      </div>
+      <div className="flex flex-wrap justify-center gap-4 p-4">
+        {/* {articles.map((news, index) => {
+          return (
+            <Blog
+              key={index}
+              title={news.title}
+              description={news.description}
+              src={news.urlToImage}
+              url={news.url}
+            />
+          );
+        })} */}
+      </div>
     </div>
   );
 };
