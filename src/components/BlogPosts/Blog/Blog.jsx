@@ -1,27 +1,25 @@
-import "./Blog.css";
+/* eslint-disable react/prop-types */
 import image from "../../../assets/hero_banner.jpg";
 import { Link } from "react-router-dom";
 
-const Blog = ({ index, title, description, src, url }) => {
+const Blog = ({ index, title, description, src }) => {
   return (
     <>
       {src && description && (
-        <div className="blog">
-          <div className="card" style={{ width: "23rem", height: "30rem" }}>
-            <img
-              src={src ? src : { image }}
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body">
-              <h5 className="card-title">{title.slice(0, 70)}</h5>
-              <p className="card-text">
-                {description ? description.slice(0, 150) : "..."}
-              </p>
-              <Link to={`/blog/blogcontent/${index}}`} className="btn">
-                Read More
-              </Link>
-            </div>
+        <div
+          className="flex flex-col gap-4 bg-gray-800 rounded-lg shadow-hidden p-2 overflow-hidden"
+          style={{ width: "23rem", height: "30rem" }}
+        >
+          <img src={src ? src : { image }} className="" alt="..." />
+          <div className="flex flex-col gap-2 p-2 text-lg">
+            <h5>{title.slice(0, 70)}</h5>
+            <p>{description ? description.slice(0, 98) : "..."}</p>
+            <Link
+              to={`/blog/blogcontent/${index}}`}
+              className="bg-green-500 p-2 rounded text-black"
+            >
+              Read More
+            </Link>
           </div>
         </div>
       )}

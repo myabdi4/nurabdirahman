@@ -1,4 +1,3 @@
-import "./BlogPosts.css";
 import Blog from "./Blog/Blog";
 import { useState, useEffect } from "react";
 
@@ -17,20 +16,18 @@ const BlogPosts = ({ category }) => {
   }, [category]);
 
   return (
-    <div className="display-items">
-      <div className="blog-posts">
-        {articles.map((news, index) => {
-          return (
-            <Blog
-              key={index}
-              title={news.title}
-              description={news.description}
-              src={news.urlToImage}
-              url={news.url}
-            />
-          );
-        })}
-      </div>
+    <div className="flex flex-wrap justify-center gap-4 p-4">
+      {articles.map((news, index) => {
+        return (
+          <Blog
+            key={index}
+            title={news.title}
+            description={news.description}
+            src={news.urlToImage}
+            url={news.url}
+          />
+        );
+      })}
     </div>
   );
 };

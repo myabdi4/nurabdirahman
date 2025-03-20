@@ -1,57 +1,27 @@
 /* eslint-disable react/prop-types */
 // import React from "react";
-import "./DropdownComponent.css";
 
 const DropdownComponent = ({ setCategory }) => {
   return (
-    <div className="dropdown">
-      <button
-        className="btn btn-secondary dropdown-toggle"
-        type="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Choose a Category
-      </button>
-      <ul className="dropdown-menu dropdown-menu-dark">
-        <li>
-          <div
-            className="dropdown-item active"
-            onClick={() => setCategory("technology")}
-          >
-            Technology
-          </div>
+    <div className="flex gap-2 p-2">
+      <ul className="flex gap-4 cursor-pointer ">
+        <li className="hover:text-green-500">
+          <div onClick={() => setCategory("technology")}>Technology</div>
         </li>
-        <li>
-          <div
-            className="dropdown-item"
-            onClick={() => setCategory("Business")}
-          >
-            Business
-          </div>
+        <li className="hover:text-green-500">
+          <div onClick={() => setCategory("Business")}>Business</div>
         </li>
-        <li>
-          <div className="dropdown-item" onClick={() => setCategory("Health")}>
-            Health
-          </div>
+        <li className="hover:text-green-500">
+          <div onClick={() => setCategory("Health")}>Health</div>
         </li>
-        <li>
-          <div className="dropdown-item" onClick={() => setCategory("science")}>
-            Science
-          </div>
+        <li className="hover:text-green-500">
+          <div onClick={() => setCategory("science")}>Science</div>
         </li>
-        <li>
-          <div className="dropdown-item" onClick={() => setCategory("sports")}>
-            Sports
-          </div>
+        <li className="hover:text-green-500">
+          <div onClick={() => setCategory("sports")}>Sports</div>
         </li>
-        <li>
-          <hr className="dropdown-divider" />
-        </li>
-        <li>
-          <div className="dropdown-item" href="/profile">
-            Profile
-          </div>
+        <li className="hover:text-green-500">
+          <div href="/profile">Profile</div>
         </li>
       </ul>
     </div>

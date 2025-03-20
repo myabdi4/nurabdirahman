@@ -1,5 +1,4 @@
 // import React from "react";
-import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 import { useRef, useEffect } from "react";
 
@@ -30,16 +29,31 @@ const Navbar = ({ setCategory }) => {
   }, []);
 
   return (
-    <div className="navbar" ref={navRef}>
-      <div className="navbar-right">
-        <img src={navbar_logo} alt="" />
-        <ul>
-          <li onClick={() => handleNavigation("/")}>Home</li>
-          <li onClick={() => handleNavigation("/blogs")}>Blogs</li>
-          <li onClick={() => handleNavigation("/projects")}>Projects</li>
+    <div className="flex justify-between items-center p-4" ref={navRef}>
+      <div className="flex justify-between items-center gap-4">
+        <img src={navbar_logo} alt="" className="h-28" />
+        <ul className="flex gap-4">
+          <li
+            className="cursor-pointer hover:text-green-500"
+            onClick={() => handleNavigation("/")}
+          >
+            Home
+          </li>
+          <li
+            className="cursor-pointer hover:text-green-500"
+            onClick={() => handleNavigation("/blogs")}
+          >
+            Blogs
+          </li>
+          <li
+            className="cursor-pointer hover:text-green-500"
+            onClick={() => handleNavigation("/projects")}
+          >
+            Projects
+          </li>
         </ul>
       </div>
-      <div className="navbar-left">
+      <div className="flex gap-4">
         {location.pathname === "/blogs" && (
           <DropdownComponent setCategory={setCategory} />
         )}
