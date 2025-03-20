@@ -29,8 +29,8 @@ const Navbar = ({ setCategory }) => {
   }, []);
 
   return (
-    <div className="flex justify-between items-center p-4 text-xl" ref={navRef}>
-      <div className="flex justify-between items-center gap-4">
+    <div className="flex justify-center lg:justify-between items-center p-4 text-xl" ref={navRef}>
+      <div className="md:flex md:justify-between items-center gap-4">
         <img src={navbar_logo} alt="" className="w-52" />
         <ul className="flex gap-4 text-lg md:text-xl">
           <li
