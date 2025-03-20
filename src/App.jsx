@@ -2,7 +2,7 @@ import Blog from "./pages/Blogs/Blog";
 import Home from "./pages/Home/Home";
 import { Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects/Projects";
-import BlogContent from "./components/BlogContent/BlogContent";
+import BlogContent from "./components/BlogPosts/BlogContent/BlogContent";
 // import Layout from "./Layout/Layout";
 
 function App() {

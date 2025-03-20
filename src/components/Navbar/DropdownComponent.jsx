@@ -1,7 +1,8 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+// import React from "react";
 import "./DropdownComponent.css";
 
-const DropdownComponent = ({setCategory}) => {
+const DropdownComponent = ({ setCategory }) => {
   return (
     <div className="dropdown">
       <button

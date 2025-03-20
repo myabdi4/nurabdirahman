@@ -2,6 +2,7 @@ import "./BlogPosts.css";
 import Blog from "./Blog/Blog";
 import { useState, useEffect } from "react";
 
+// eslint-disable-next-line react/prop-types
 const BlogPosts = ({ category }) => {
   const [articles, setArticles] = useState([]);
 

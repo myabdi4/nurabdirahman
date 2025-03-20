@@ -9,6 +9,7 @@ import search_icon from "../../assets/search_icon.svg";
 import bell_icon from "../../assets/bell_icon.svg";
 import DropdownComponent from "./DropdownComponent";
 
+// eslint-disable-next-line react/prop-types
 const Navbar = ({ setCategory }) => {
   const navigate = useNavigate();
   const navRef = useRef();
@@ -39,7 +40,9 @@ const Navbar = ({ setCategory }) => {
         </ul>
       </div>
       <div className="navbar-left">
-        <DropdownComponent setCategory={setCategory} />
+        {location.pathname === "/blogs" && (
+          <DropdownComponent setCategory={setCategory} />
+        )}
         <img src={search_icon} alt="" className="icons" />
         <img src={bell_icon} alt="" className="icons" />
       </div>
