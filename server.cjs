@@ -8,12 +8,7 @@ const app = express();
 const port = 5000;
 
 // Enable CORS for the frontend to make requests to this server
-app.use(
-  cors({
-    origin: "https://nurabdirahman.vercel.app", // Replace this with your Vercel URL
-    methods: "GET, POST", // Specify allowed methods
-  })
-);
+app.use(cors());
 
 // Endpoint to get articles based on category
 app.get("/api/articles", async (req, res) => {
