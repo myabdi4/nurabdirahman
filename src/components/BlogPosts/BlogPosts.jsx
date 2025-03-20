@@ -14,7 +14,11 @@ const BlogPosts = ({ category }) => {
       setError(null); // Reset error before making the new request
       try {
         const res = await fetch(
-          `http://localhost:5000/api/articles?category=${category}`
+          `${
+            import.meta.env.VITE_API_URL
+          }/api/articles?category=${category}&apiKey=${
+            import.meta.env.VITE_API_KEY
+          }`
         );
         const data = await res.json();
         if (res.ok) {
