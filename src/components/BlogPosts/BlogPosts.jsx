@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Blog from "./Blog/Blog";
 import { useState, useEffect } from "react";
 
@@ -13,18 +14,15 @@ const BlogPosts = ({ category }) => {
       setError(null); // Reset error before making the new request
       try {
         const res = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${
-            import.meta.env.VITE_API_KEY
-          }`
+          `http://localhost:5000/api/articles?category=${category}`
         );
         const data = await res.json();
         if (res.ok) {
-          setArticles(data.articles);
+          setArticles(data.articles); // Set articles if the response is OK
         } else {
           // If the response is not OK, show the error message from API
           setError(data.message || "Something went wrong!");
         }
-      // eslint-disable-next-line no-unused-vars
       } catch (error) {
         // Handle network or fetch errors
         setError("Failed to fetch articles. Please try again later.");
