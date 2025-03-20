@@ -32,7 +32,7 @@ const Navbar = ({ setCategory }) => {
     <div className="flex justify-between items-center p-4 text-xl" ref={navRef}>
       <div className="flex justify-between items-center gap-4">
         <img src={navbar_logo} alt="" className="w-52" />
-        <ul className="flex gap-4">
+        <ul className="flex gap-4 text-lg md:text-xl">
           <li
             className="cursor-pointer hover:text-green-500"
             onClick={() => handleNavigation("/")}
@@ -53,7 +53,7 @@ const Navbar = ({ setCategory }) => {
           </li>
         </ul>
       </div>
-      <div className="flex gap-4">
+      <div className="flex gap-4 hidden lg:flex">
         {location.pathname === "/blogs" && (
           <DropdownComponent setCategory={setCategory} />
         )}
