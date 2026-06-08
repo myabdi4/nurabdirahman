@@ -1,8 +1,11 @@
 import photo from "../assets/abdirahman.jpeg";
 import useInView from "../hooks/useInView";
+import useVisitorCount from "../hooks/useVisitorCount";
 
 function Hero() {
   const [ref, inView] = useInView();
+  const count = useVisitorCount();
+
   return (
     <section
       ref={ref}
@@ -15,6 +18,12 @@ function Hero() {
             <p className="text-sm text-[#2563EB] font-medium uppercase tracking-widest mb-6">
               Software Engineer
             </p>
+            {count !== null && (
+              <p className="text-xs text-[#71717A] mb-6">
+                👁 {count} {count === 1 ? "visitor" : "visitors"} in the last 24
+                hours
+              </p>
+            )}
             <h1 className="text-5xl md:text-[64px] font-bold leading-[1.1] text-[#18181B] dark:text-[#FAFAFA] mb-6">
               Building thoughtful digital experiences.
             </h1>
