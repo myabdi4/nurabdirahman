@@ -1,3 +1,4 @@
+/* global SUPABASE_URL, SUPABASE_ANON_KEY */
 export const config = {
   runtime: "edge",
 };
@@ -5,8 +6,8 @@ export const config = {
 export default async function handler(request) {
   const ip = request.headers.get("x-forwarded-for")?.split(",")[0] || "unknown";
 
-const supabaseUrl = SUPABASE_URL;
-const supabaseKey = SUPABASE_ANON_KEY;
+  const supabaseUrl = SUPABASE_URL;
+  const supabaseKey = SUPABASE_ANON_KEY;
 
   if (!supabaseUrl || !supabaseKey) {
     return new Response(JSON.stringify({ error: "Missing env vars" }), {
