@@ -1,19 +1,11 @@
-/* global SUPABASE_URL, SUPABASE_ANON_KEY */
-export const config = {
-  runtime: "edge",
-};
+export default async function handler(req, res) {
+  const ip = req.headers["x-forwarded-for"]?.split(",")[0] || "unknown";
 
-export default async function handler(request) {
-  const ip = request.headers.get("x-forwarded-for")?.split(",")[0] || "unknown";
-
-  const supabaseUrl = SUPABASE_URL;
-  const supabaseKey = SUPABASE_ANON_KEY;
+  const supabaseUrl = process.env.SUPABASE_URL;
+  const supabaseKey = process.env.SUPABASE_ANON_KEY;
 
   if (!supabaseUrl || !supabaseKey) {
-    return new Response(JSON.stringify({ error: "Missing env vars" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
+    return res.status(500).json({ error: "Missing env vars" });
   }
 
   const twentyFourHoursAgo = new Date(
@@ -58,16 +50,8 @@ export default async function handler(request) {
 
     const visitors = await countRes.json();
 
-    return new Response(JSON.stringify({ count: visitors.length }), {
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-    });
+    return res.status(200).json({ count: visitors.length });
   } catch (err) {
-    return new Response(JSON.stringify({ error: err.message }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
+    return res.status(500).json({ error: err.message });
   }
 }
